@@ -40,9 +40,10 @@ while true; do
     echo -e "${C} 1) ${W}Discord Server Link${N}"
     echo -e "${C} 2) ${W}YouTube Channel Link${N}"
     echo -e "${C} 3) ${W}VM Installer ${G}(IDX VPS)${N}"
-    echo -e "${C} 4) ${W}RDP Installer ${G}(Desktop Environment)${N}"
-    echo -e "${C} 5) ${W}Tailscale Installer ${G}(VPN)${N}"
-    echo -e "${R} 6) Exit${N}"
+    echo -e "${C} 4) ${W}Pterodactyl Panel + Wings Installer ${G}(Pterodactyl Setup)${N}"
+    echo -e "${C} 5) ${W}RDP Installer ${G}(Desktop Environment)${N}"
+    echo -e "${C} 6) ${W}Tailscale Installer ${G}(VPN)${N}"
+    echo -e "${R} 7) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
     read -p "${Y}👉 Select an option [1-10]: ${N}" choice
@@ -68,19 +69,25 @@ while true; do
             bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/idx)
             pause
             ;;
-        4)
+       4)
+            echo ""
+            echo -e "${Y}🌐 Installing Pterodactyl panel + wings...${N}"
+            bash <(curl -s https://pterodactyl-installer.se)
+            pause
+            ;;
+        5)
             echo ""
             echo -e "${Y}🖥️  Installing RDP...${N}"
             curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/rdp | sed 's/\r$//' | bash
             pause
             ;;
-        5)
+        6)
             echo ""
             echo -e "${Y}🌐 Installing Tailscale VPN...${N}"
             curl -fsSL https://tailscale.com/install.sh | sh
             pause
             ;;
-        6)
+        7)
             echo ""
             echo -e "${G}👋 Exiting... Thanks for using!${N}"
             exit 0
