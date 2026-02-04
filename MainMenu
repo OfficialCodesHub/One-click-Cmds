@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ==========================================
-#   🚀 CodeWithWarrior - ALL IN ONE TOOL
+#   🚀 AyushTheWarrior - ALL IN ONE TOOL
 # ==========================================
 
 set -u
@@ -23,7 +23,7 @@ header() {
     echo -e "${B} | |  | | (_| | | | | | | |  | |  __/ | | | |_| |${N}"
     echo -e "${B} |_|  |_|\__,_|_|_| |_| |_|  |_|\___|_| |_|\__,_|${N}"
     echo -e "${B}=====================================================${N}"
-    echo -e "${Y}      🚀 Subscribe To CodeWithWarrior      ${N}"
+    echo -e "${Y}      🚀 Subscribe To AyushTheWarrior      ${N}"
     echo -e "${B}=====================================================${N}"
     echo ""
 }
@@ -59,7 +59,7 @@ while true; do
         2)
             echo ""
             echo -e "${R}📺 Subscribe to YouTube:${N}"
-            echo -e "${Y}🔗 https://youtube.com/@codewithwarrior${N}"
+            echo -e "${Y}🔗 https://www.youtube.com/@OffficialAyushTheWarrior${N}"
             echo ""
             pause
             ;;
