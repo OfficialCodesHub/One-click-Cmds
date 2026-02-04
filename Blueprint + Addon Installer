@@ -45,11 +45,6 @@ if [ "$choice" = "2" ]; then
             echo -e "${Y}🌐 Installing Pterodactyl Addon...${N}"
             bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Addons
             pause
-
-# =======================================
-# Exit
-# =======================================
-else
   echo "[INFO] Exiting..."
   exit 0
 fi
