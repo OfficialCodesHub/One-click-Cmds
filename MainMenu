@@ -41,9 +41,10 @@ while true; do
     echo -e "${C} 2) ${W}YouTube Channel Link${N}"
     echo -e "${C} 3) ${W}VM Installer ${G}(IDX VPS)${N}"
     echo -e "${C} 4) ${W}Pterodactyl Panel + Wings Installer ${G}(Pterodactyl Setup)${N}"
-    echo -e "${C} 5) ${W}RDP Installer ${G}(Desktop Environment)${N}"
-    echo -e "${C} 6) ${W}Tailscale Installer ${G}(VPN)${N}"
-    echo -e "${R} 7) Exit${N}"
+    echo -e "${C} 5) ${W}Pterodactyl Blueprint + Addons Installer ${G}(Pterodactyl Addons + Blueprint)${N}"
+    echo -e "${C} 6) ${W}RDP Installer ${G}(Desktop Environment)${N}"
+    echo -e "${C} 7) ${W}Tailscale Installer ${G}(VPN)${N}"
+    echo -e "${R} 8) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
     read -p "${Y}👉 Select an option [1-10]: ${N}" choice
@@ -77,17 +78,23 @@ while true; do
             ;;
        5)
             echo ""
+            echo -e "${Y}🖥️  Installing Blueprint + Addon...${N}"
+            curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Blueprint%20%2B%20Addon%20Installer | sed 's/\r$//' | bash
+            pause
+            ;;
+       6)
+            echo ""
             echo -e "${Y}🖥️  Installing RDP...${N}"
             curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/rdp | sed 's/\r$//' | bash
             pause
             ;;
-        6)
+        7)
             echo ""
             echo -e "${Y}🌐 Installing Tailscale VPN...${N}"
             curl -fsSL https://tailscale.com/install.sh | sh
             pause
             ;;
-        7)
+        8)
             echo ""
             echo -e "${G}👋 Exiting... Thanks for using!${N}"
             exit 0
