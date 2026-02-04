@@ -1,0 +1,57 @@
+#!/bin/bash
+set -euo pipefail
+
+# =======================================
+# Rainbow banner for AyushTheWarrior
+# =======================================
+rainbow() {
+  text=$1
+  colors=(31 33 32 36 34 35)
+  i=0
+  for (( c=0; c<${#text}; c++ )); do
+    printf "\033[1;${colors[i]}m${text:$c:1}\033[0m"
+    i=$(( (i+1) % ${#colors[@]} ))
+  done
+  echo
+}
+
+clear
+rainbow "================================================"
+rainbow "    WELCOME TO AyushTheWarrior Auto Setup"
+rainbow "================================================"
+echo
+
+# =======================================
+# Menu
+# =======================================
+echo "Choose an option:"
+echo "  1) Blueprint)"
+echo "  2) Addons"
+echo "  0) Exit"
+echo
+read -p "Enter choice: " choice
+
+# =======================================
+# Option 1 → create .idx/dev.nix + script.sh
+# =======================================
+if [ "$choice" = "1" ]; then
+            echo ""
+            echo -e "${Y}🌐 Installing Pterodactyl Blueprint...${N}"
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Blueprint
+            pause
+            ;;
+
+if [ "$choice" = "2" ]; then
+            echo ""
+            echo -e "${Y}🌐 Installing Pterodactyl Addon...${N}"
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Addons
+            pause
+            ;;
+
+# =======================================
+# Exit
+# =======================================
+else
+  echo "[INFO] Exiting..."
+  exit 0
+fi
