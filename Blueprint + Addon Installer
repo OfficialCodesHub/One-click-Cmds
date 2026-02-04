@@ -39,14 +39,12 @@ if [ "$choice" = "1" ]; then
             echo -e "${Y}🌐 Installing Pterodactyl Blueprint...${N}"
             bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Blueprint
             pause
-            ;;
 
 if [ "$choice" = "2" ]; then
             echo ""
             echo -e "${Y}🌐 Installing Pterodactyl Addon...${N}"
             bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Addons
             pause
-            ;;
 
 # =======================================
 # Exit
