@@ -10,9 +10,9 @@ display_header() {
     clear
     cat << "EOF"
 ========================================================================
-                  Made By CodesWithWarrior! 
+                  Made By AyushTheWarrior! 
 
-                 SUBSCRIBE TO CODEWITHWARRIOR                                                                
+                 SUBSCRIBE TO AYUSHTHEWARRIOR                                                                
 ========================================================================
 EOF
     echo
