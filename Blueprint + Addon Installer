@@ -25,7 +25,7 @@ echo
 # Menu
 # =======================================
 echo "Choose an option:"
-echo "  1) Blueprint)"
+echo "  1) Blueprint"
 echo "  2) Addons"
 echo "  0) Exit"
 echo
