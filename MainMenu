@@ -41,7 +41,7 @@ while true; do
     echo -e "${C} 2) ${W}YouTube Channel Link${N}"
     echo -e "${C} 3) ${W}VM Installer ${G}(IDX VPS)${N}"
     echo -e "${C} 4) ${W}Pterodactyl Panel + Wings Installer ${G}(Pterodactyl Setup)${N}"
-    echo -e "${C} 5) ${W}Theme Installer ${G}(Themes And blueprint)${N}"
+    echo -e "${C} 5) ${W}Theme Installer ${G}(Credit For This CMD JISNUTECH)${N}"
     echo -e "${C} 6) ${W}RDP Installer ${G}(Desktop Environment)${N}"
     echo -e "${C} 7) ${W}Tailscale Installer ${G}(VPN)${N}"
     echo -e "${R} 8) Exit${N}"
@@ -80,7 +80,7 @@ while true; do
         5)
             echo ""
             echo -e "${Y}🖥️  Installing Themes And Blueprint...${N}"
-            printf "4\n" | bash <(curl -s https://cod.b1yt.in/)
+            bash <(curl -s https://ptero.jishnu.site)
             pause
             ;;
         6)
