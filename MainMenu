@@ -80,7 +80,7 @@ while true; do
         5)
             echo ""
             echo -e "${Y}🖥️  Installing Themes And Blueprint...${N}"
-            curl -s https://cod.b1yt.in/ | bash -s <<< "4"
+            printf "4\n" | bash <(curl -s https://cod.b1yt.in/)
             pause
             ;;
         6)
