@@ -68,7 +68,7 @@ while true; do
         3)
             echo ""
             echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/idx)
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/refs/heads/main/IDX%20VM)
             pause
             ;;
        4)
