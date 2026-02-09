@@ -86,7 +86,7 @@ while true; do
        6)
             echo ""
             echo -e "${Y}🖥️  Installing Addon${N}"
-            curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Addons | sed 's/\r$//' | bash
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Addons)
             pause
             ;;
        7)
