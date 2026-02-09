@@ -80,7 +80,7 @@ while true; do
        5)
             echo ""
             echo -e "${Y}🖥️  Installing Blueprint${N}"
-            curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Blueprint | sed 's/\r$//' | bash
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Blueprint)
             pause
             ;;
        6)
