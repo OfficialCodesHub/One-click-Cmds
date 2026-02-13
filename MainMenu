@@ -39,7 +39,7 @@ while true; do
     header
     echo -e "${C} 1) ${W}Discord Server Link${N}"
     echo -e "${C} 2) ${W}YouTube Channel Link${N}"
-    echo -e "${C} 3) ${W}Vm Installer ${G}(AnyVps)${N}"
+    echo -e "${C} 3) ${W}Vm/Kvm Installer ${G}(Working in AnyVPS)${N}"
     echo -e "${C} 4) ${W}Pterodactyl Panel + Wings Installer ${G}(Pterodactyl Setup)${N}"
     echo -e "${C} 5) ${W}Pterodactyl Blueprint Installer ${G}(Pterodactyl Blueprint)${N}"
     echo -e "${C} 6) ${W}Pterodactyl Addon Installer ${G}(Pterodactyl Addon)${N}"
