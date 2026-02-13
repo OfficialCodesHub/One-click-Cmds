@@ -39,7 +39,7 @@ while true; do
     header
     echo -e "${C} 1) ${W}Discord Server Link${N}"
     echo -e "${C} 2) ${W}YouTube Channel Link${N}"
-    echo -e "${C} 3) ${W}VM Installer ${G}(IDX VPS)${N}"
+    echo -e "${C} 3) ${W}Vm Installer ${G}(AnyVps)${N}"
     echo -e "${C} 4) ${W}Pterodactyl Panel + Wings Installer ${G}(Pterodactyl Setup)${N}"
     echo -e "${C} 5) ${W}Pterodactyl Blueprint Installer ${G}(Pterodactyl Blueprint)${N}"
     echo -e "${C} 6) ${W}Pterodactyl Addon Installer ${G}(Pterodactyl Addon)${N}"
@@ -68,7 +68,7 @@ while true; do
         3)
             echo ""
             echo -e "${Y}💻 Installing VM (IDX VPS)...${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/refs/heads/main/IDX%20VM)
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/refs/heads/main/003)
             pause
             ;;
        4)
@@ -80,19 +80,19 @@ while true; do
        5)
             echo ""
             echo -e "${Y}🖥️  Installing Blueprint${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Blueprint)
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/002)
             pause
             ;;
        6)
             echo ""
             echo -e "${Y}🖥️  Installing Addon${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Addons)
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/001)
             pause
             ;;
        7)
             echo ""
             echo -e "${Y}🖥️  Installing RDP...${N}"
-            curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/rdp | sed 's/\r$//' | bash
+            curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/004 | sed 's/\r$//' | bash
             pause
             ;;
         8)
