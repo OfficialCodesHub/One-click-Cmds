@@ -43,7 +43,7 @@ while true; do
     echo -e "${C} 4) ${W}Pterodactyl Panel + Wings Installer ${G}(Pterodactyl Setup)${N}"
     echo -e "${C} 5) ${W}Pterodactyl Blueprint Installer ${G}(Pterodactyl Blueprint)${N}"
     echo -e "${C} 6) ${W}Pterodactyl Addon Installer ${G}(Pterodactyl Addon)${N}"
-    echo -e "${C} 7) ${W}RDP Installer ${G}(Desktop Environment)${N}"
+    echo -e "${C} 7) ${W}SFTP FIXER ${G}(Working In AnyVPS)${N}"
     echo -e "${C} 8) ${W}Tailscale Installer ${G}(VPN)${N}"
     echo -e "${R} 9) Exit${N}"
     echo ""
@@ -91,8 +91,8 @@ while true; do
             ;;
        7)
             echo ""
-            echo -e "${Y}🖥️  Installing RDP...${N}"
-            curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/004 | sed 's/\r$//' | bash
+            echo -e "${Y}🖥️  Fixing SFTP...${N}"
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/refs/heads/main/ssh.sh)
             pause
             ;;
         8)
