@@ -80,13 +80,13 @@ while true; do
        5)
             echo ""
             echo -e "${Y}🖥️  Installing Blueprint${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/002)
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/blueprint-installer.sh)
             pause
             ;;
        6)
             echo ""
             echo -e "${Y}🖥️  Installing Addon${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/001)
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/addon-installer.sh)
             pause
             ;;
        7)
