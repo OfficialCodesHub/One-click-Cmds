@@ -41,7 +41,7 @@ while true; do
     echo -e "${C} 2) ${W}YouTube Channel Link${N}"
     echo -e "${C} 3) ${W}Vm/Kvm Installer ${G}(Working in AnyVPS)${N}"
     echo -e "${C} 4) ${W}Pterodactyl Panel + Wings Installer ${G}(Pterodactyl Setup)${N}"
-    echo -e "${C} 5) ${W}Pterodactyl Blueprint Installer ${G}(Pterodactyl Blueprint)${N}"
+    echo -e "${C} 5) ${W}Pterodactyl Blueprint + Addon Installer ${G}(Pterodactyl Blueprint + Addons)${N}"
     echo -e "${C} 6) ${W}Pterodactyl Addon Installer ${G}(Pterodactyl Addon)${N}"
     echo -e "${C} 7) ${W}SFTP FIXER ${G}(Working In AnyVPS)${N}"
     echo -e "${C} 8) ${W}Tailscale Installer ${G}(VPN)${N}"
@@ -79,8 +79,8 @@ while true; do
             ;;
        5)
             echo ""
-            echo -e "${Y}🖥️  Installing Blueprint${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/blueprint-installer.sh)
+            echo -e "${Y}🖥️  Installing Blueprint + Addon${N}"
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/refs/heads/main/Blueprint%20%2B%20Addon%20Installer)
             pause
             ;;
        6)
