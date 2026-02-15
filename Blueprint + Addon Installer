@@ -1,50 +1,74 @@
-#!/bin/bash
-set -euo pipefail
+#!/usr/bin/env bash
+# ====================================================
+#   🚀 AyushTheWarrior - Blueprint And Addon Installer
+# ====================================================
 
-# =======================================
-# Rainbow banner for AyushTheWarrior
-# =======================================
-rainbow() {
-  text=$1
-  colors=(31 33 32 36 34 35)
-  i=0
-  for (( c=0; c<${#text}; c++ )); do
-    printf "\033[1;${colors[i]}m${text:$c:1}\033[0m"
-    i=$(( (i+1) % ${#colors[@]} ))
-  done
-  echo
+set -u
+
+# --- ANSI COLORS ---
+C=$'\033[36m'  # Cyan
+G=$'\033[32m'  # Green
+R=$'\033[31m'  # Red
+B=$'\033[34m'  # Blue
+Y=$'\033[33m'  # Yellow
+W=$'\033[97m'  # White
+N=$'\033[0m'   # Reset
+
+# --- HEADER FUNCTION ---
+header() {
+    clear
+    echo -e "${B}  __  __                        ${N}"
+    echo -e "${B} |  \/  | ___ _ __  _   _       ${N}"
+    echo -e "${B} | |\/| |/ _ \ '_ \| | | |      ${N}"
+    echo -e "${B} | |  | |  __/ | | | |_| |      ${N}"
+    echo -e "${B} |_|  |_|\___|_| |_|\__,_|      ${N}"
+    echo -e "${B}=====================================================${N}"
+    echo -e "${Y}      🚀 Subscribe To AyushTheWarrior      ${N}"
+    echo -e "${B}=====================================================${N}"
+    echo ""
 }
 
-clear
-rainbow "================================================"
-rainbow "    WELCOME TO AyushTheWarrior Auto Setup"
-rainbow "================================================"
-echo
+# --- PAUSE FUNCTION ---
+pause() {
+    echo ""
+    read -p "${W}Press [Enter] to return to menu...${N}" dummy
+}
 
-# =======================================
-# Menu
-# =======================================
-echo "Choose an option:"
-echo "  1) Blueprint"
-echo "  2) Addons"
-echo "  0) Exit"
-echo
-read -p "Enter choice: " choice
+# --- MAIN LOOP ---
+while true; do
+    header
+    echo -e "${C} 1) ${W}BluePrint Installer${N}"
+    echo -e "${C} 2) ${W}Addon Installer${N}"
+    echo -e "${R} 3) Exit${N}"
+    echo ""
+    echo -e "${B}=====================================================${N}"
+    read -p "${Y}👉 Select an option [1-3]: ${N}" choice
 
-# =======================================
-# Option 1 → create .idx/dev.nix + script.sh
-# =======================================
-if [ "$choice" = "1" ]; then
+    case $choice in
+        1)
             echo ""
-            echo -e "${Y}🌐 Installing Pterodactyl Blueprint...${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Blueprint
-            pause
-
-if [ "$choice" = "2" ]; then
+            echo -e "${Y}🖥️  Installing Blueprint${N}"
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/blueprint-installer.sh)
             echo ""
-            echo -e "${Y}🌐 Installing Pterodactyl Addon...${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/Addons
             pause
-  echo "[INFO] Exiting..."
-  exit 0
-fi
+            ;;
+        2)
+            echo ""
+            echo -e "${Y}🖥️  Installing Addon${N}"
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/main/addon-installer.sh)
+            echo ""
+            pause
+            ;;
+        3)
+            echo ""
+            echo -e "${G}👋 Exiting... Thanks for using!${N}"
+            exit 0
+            ;;
+        *)
+            echo ""
+            echo -e "${R}❌ Invalid Option! Please select between 1-3.${N}"
+            sleep 2
+            ;;
+    esac
+done
+EOF
