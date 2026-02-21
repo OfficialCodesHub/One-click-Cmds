@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ====================================================
-#   🚀 AyushTheWarrior - Blueprint And Addon Installer
+#   🚀 AyushTheWarrior - Blueprint+Addon+Theme Installer
 # ====================================================
 
 set -u
@@ -37,8 +37,9 @@ pause() {
 # --- MAIN LOOP ---
 while true; do
     header
-    echo -e "${C} 1) ${W}BluePrint Installer${N}"
-    echo -e "${C} 2) ${W}Addon Installer${N}"
+    echo -e "${C} 1) ${W}BLUEPRINT INSTALLER ${G}(Working in AnyVPS)${N}"
+    echo -e "${C} 2) ${W}ADDON INSTALLER ${G}(Worked With SFTP)${N}"
+    echo -e "${C} 3) ${W}ADDON+THEME INSTALLER ${G}(Without SFTP)${N}"
     echo -e "${R} 3) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
@@ -60,6 +61,13 @@ while true; do
             pause
             ;;
         3)
+            echo ""
+            echo -e "${Y}🖥️  Installing Addon+Theme${N}"
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/jaare-kutriya/refs/heads/main/Ptero-addons(without%20sftp))
+            echo ""
+            pause
+            ;;
+        4)
             echo ""
             echo -e "${G}👋 Exiting... Thanks for using!${N}"
             exit 0
