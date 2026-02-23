@@ -145,11 +145,12 @@ while true; do
     echo -e "${C} 2) ${W}Proxmox VE (Docker) Install 🚀${N}"
     echo -e "${C} 3) ${W}VM/KVM Installer${N}"
     echo -e "${C} 4) ${W}Pterodactyl Panel Installer${N}"
-    echo -e "${C} 5) ${W}Blueprint + Addon Installer${N}"
-    echo -e "${C} 6) ${W}Lxd Installer${N}"
-    echo -e "${C} 7) ${W}SFTP Fixer${N}"
-    echo -e "${C} 8) ${W}Tailscale VPN Installer${N}"
-    echo -e "${R} 9) Exit${N}"
+    echo -e "${C} 5) ${W}ALL MINECRAFT Panel Installer${N}"
+    echo -e "${C} 6) ${W}Blueprint + Addon Installer${N}"
+    echo -e "${C} 7) ${W}Lxd Installer${N}"
+    echo -e "${C} 8) ${W}SFTP Fixer${N}"
+    echo -e "${C} 9) ${W}Tailscale VPN Installer${N}"
+    echo -e "${R} 10) Exit${N}"
 
     echo ""
     read -p "${Y}Select an option [1-9]: ${N}" choice
@@ -187,27 +188,33 @@ while true; do
             ;;
         5)
             echo ""
+            echo -e "${Y}🖥️  ALL MINECRAFT PANEL${N}"
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/panels/refs/heads/main/panelsop)
+            pause
+            ;;
+        6)
+            echo ""
             echo -e "${Y}🖥️  Installing Blueprint + Addon${N}"
             bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/refs/heads/main/Blueprint%20%2B%20Addon%20Installer)
             pause
             ;;
-        6)
+        7)
             echo ""
             echo -e "${Y}🖥️  Lxd Installer${N}"
             bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/refs/heads/main/lxd%20installer)
             pause
             ;;
-        7)
+        8)
             echo ""
             echo -e "${Y}🖥️  Fixing SFTP...${N}"
             bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/One-click-Cmds/refs/heads/main/ssh.sh)
             pause
             ;;
-        8)
+        9)
             curl -fsSL https://tailscale.com/install.sh | sh
             pause
             ;;
-        9)
+        10)
             echo -e "${G}AYUSHTHEWARRIOR NODE ROCKS 😎🔥${N}"
             sleep 1
             exit 0
