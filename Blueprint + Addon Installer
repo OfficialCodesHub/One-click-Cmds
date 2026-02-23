@@ -63,7 +63,7 @@ while true; do
         3)
             echo ""
             echo -e "${Y}🖥️  Installing Addon+Theme${N}"
-            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/jaare-kutriya/refs/heads/main/Ptero-addons(without%20sftp)
+            bash <(curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/jaare-kutriya/refs/heads/main/Ptero-addons)
             echo ""
             pause
             ;;
