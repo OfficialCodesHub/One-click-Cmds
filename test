@@ -28,7 +28,7 @@ typewriter() {
 
 # ---- PROGRESS BAR ----
 progress_bar() {
-    echo -e "${C}Initializing TYRKROX NODE...${N}"
+    echo -e "${C}Initializing AYUSHTHEWARRIOR NODE...${N}"
     for i in {1..30}; do
         printf "${G}#${N}"
         sleep 0.03
@@ -46,12 +46,12 @@ progress_bar() {
 intro() {
     clear
     echo -e "${P}"
-    typewriter " █████╗ ██╗   ██╗██╗   ██╗███████╗██╗  ██╗████████╗██╗  ██╗███████╗██╗    ██╗ █████╗ ██████╗ ██████╗ ██╗ ██████╗ ██████╗ "
-    typewriter "██╔══██╗╚██╗ ██╔╝██║   ██║██╔════╝██║  ██║╚══██╔══╝██║  ██║██╔════╝██║    ██║██╔══██╗██╔══██╗██╔══██╗██║██╔═══██╗██╔══██╗"
-    typewriter "███████║ ╚████╔╝ ██║   ██║███████╗███████║   ██║   ███████║█████╗  ██║ █╗ ██║███████║██████╔╝██████╔╝██║██║   ██║██████╔╝"
-    typewriter "██╔══██║  ╚██╔╝  ██║   ██║╚════██║██╔══██║   ██║   ██╔══██║██╔══╝  ██║███╗██║██╔══██║██╔══██╗██╔══██╗██║██║   ██║██╔══██╗"
-    typewriter "██║  ██║   ██║   ╚██████╔╝███████║██║  ██║   ██║   ██║  ██║███████╗╚███╔███╔╝██║  ██║██║  ██║██║  ██║██║╚██████╔╝██║  ██║"
-    typewriter "╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═╝"
+    typewriter " █████╗ ██╗   ██╗██╗   ██╗███████╗██╗  ██╗ "
+    typewriter "██╔══██╗╚██╗ ██╔╝██║   ██║██╔════╝██║  ██║ "
+    typewriter "███████║ ╚████╔╝ ██║   ██║███████╗███████║ "
+    typewriter "██╔══██║  ╚██╔╝  ██║   ██║╚════██║██╔══██║ "
+    typewriter "██║  ██║   ██║   ╚██████╔╝███████║██║  ██║ "
+    typewriter "╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝ "
     echo -e "${N}"
     echo ""
     typewriter "💎 AYUSHTHEWARRIOR NODE BOOTING..."
@@ -86,7 +86,7 @@ ptero_menu() {
         echo "4) Update Panel"
         echo "5) Install SSL"
         echo "6) Uninstall Panel"
-        echo "6) Back to Main Menu"
+        echo "7) Back to Main Menu"
         echo ""
         read -p "Select option: " opt
 
@@ -122,7 +122,7 @@ ptero_menu() {
                 echo "Panel Removed."
                 sleep 2
                 ;;
-            6)
+            7)
                 break
                 ;;
             *)
