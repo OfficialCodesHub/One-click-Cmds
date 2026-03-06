@@ -40,10 +40,11 @@ while true; do
     echo -e "${C} 1) ${W}BLUEPRINT INSTALLER ${G}(Working in AnyVPS)${N}"
     echo -e "${C} 2) ${W}ADDON INSTALLER ${G}(Worked With SFTP)${N}"
     echo -e "${C} 3) ${W}ADDON+THEME INSTALLER ${G}(Without SFTP)${N}"
-    echo -e "${R} 3) Exit${N}"
+    echo -e "${C} 4) ${W}Xvs THEME INSTALLER ${G}(Premium Theme)${N}"
+    echo -e "${R} 5) Exit${N}"
     echo ""
     echo -e "${B}=====================================================${N}"
-    read -p "${Y}👉 Select an option [1-3]: ${N}" choice
+    read -p "${Y}👉 Select an option [1-5]: ${N}" choice
 
     case $choice in
         1)
@@ -69,12 +70,19 @@ while true; do
             ;;
         4)
             echo ""
+            echo -e "${Y}🖥️  Installing Xvs Theme${N}"
+            curl -fsSL https://raw.githubusercontent.com/OfficialCodesHub/xvs-theme/main/install.sh | bash
+            echo ""
+            pause
+            ;;
+        5)
+            echo ""
             echo -e "${G}👋 Exiting... Thanks for using!${N}"
             exit 0
             ;;
         *)
             echo ""
-            echo -e "${R}❌ Invalid Option! Please select between 1-4.${N}"
+            echo -e "${R}❌ Invalid Option! Please select between 1-5.${N}"
             sleep 2
             ;;
     esac
